@@ -5,16 +5,12 @@ import { FavoriteBorderRounded } from '@mui/icons-material';
 import Grid from '../Layout/Grid';
 import MiniManiCard from '../ContentCards/MiniManiCard';
 
-const CurrentManiCard = ({ className }) => {
+const CurrentManiCard = () => {
   return (
-    <DataCard
-      title="Current mani"
-      subtitle="Applied 2 days ago"
-      className={`${className}`}
-    >
-      <div className="h-full flex flex-col gap-2 justify-between">
+    <DataCard title="Current mani" subtitle="Applied 2 days ago">
+      <div className="flex flex-col gap-2 justify-between">
         <div className="flex flex-col justify-stretch">
-          <Grid gap={2} size="100">
+          <Grid gap={2} minWidth={100}>
             <MiniManiCard
               polish="Menchie the Cat"
               image="public/images/mani-placeholder.jpg"

@@ -1,11 +1,14 @@
-const Grid = ({ gap, columns, children, className, size }) => {
+const Grid = ({ gap = 1, children, minWidth = 200 }) => {
   //   Use `aspect-square` on child items to be sure they're all square
-  // todo: fix so that columns property works
 
   return (
     <div
-      className={`w-full grid grid-cols-[repeat(auto-fit,minmax(${size}px,1fr))] 
-        gap-${gap ? gap : 1} ${className}`}
+      className={`w-full`}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: `repeat(auto-fit, minmax(${minWidth}px, 1fr))`,
+        gap: `${gap}rem`, // This applies the gap dynamically
+      }}
     >
       {children}
     </div>

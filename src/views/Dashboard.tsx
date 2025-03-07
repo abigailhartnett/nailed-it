@@ -13,19 +13,15 @@ const Dashboard = () => {
   return (
     <div className="p-4">
       {/* Note: there's a better way to do responsive grids—fix it */}
-      <Grid gap={4} size="200">
-        <CurrentManiCard className="flex flex-col gap-2" />
+      <Grid minWidth={280}>
+        <CurrentManiCard />
         <CollectionBreakdown />
-        <DataCard
-          title="Collection usage"
-          color="purple"
-          className="flex flex-col gap-2"
-        >
+        <DataCard title="Collection usage" color="purple">
           <span>% Collection used</span>
           <span>vs</span>
           <span>% Collection owned</span>
         </DataCard>
-        <DataCard title="Use next" color="pink" className="flex flex-col gap-2">
+        <DataCard title="Use next" color="pink">
           <span>Color</span>
           <span>Color</span>
           <span>Color</span>
