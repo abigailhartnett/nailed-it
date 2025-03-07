@@ -5,10 +5,10 @@ const MiniManiCard = ({ polish, image }) => {
       {image ? (
         <img
           src={image}
-          className="h-10 aspect-square object-cover overflow-hidden rounded-full"
+          className="h-16 aspect-square object-cover overflow-hidden rounded-full"
         />
       ) : null}
-      <span className="text-sm text-center">{polish}</span>
+      <span className="text-sm text-center font-medium">{polish}</span>
     </div>
     // </div>
   );

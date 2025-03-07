@@ -16,12 +16,12 @@ const DataCard = ({ title, subtitle, children, color, button }) => {
       <div
         className={`${backgroundColor} rounded-tr-lg rounded-tl-lg h-2`}
       ></div>
-      <div className="flex flex-col justify-between p-4">
+      <div className="h-full flex flex-col justify-between p-4">
         <div>
           <h2 className="text-lg font-bold">{title}</h2>
           <span className="text-darkGray text-sm">{subtitle}</span>
         </div>
-        <div className="mt-4">{children}</div>
+        <div className="h-full my-4">{children}</div>
         {button ? <div className="mt-4">{button}</div> : null}
       </div>
     </div>
