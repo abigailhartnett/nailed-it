@@ -16,8 +16,8 @@ const Dashboard = () => {
       {/* Note: there's a better way to do responsive grids—fix it */}
       <Grid minWidth={280}>
         <CurrentManiCard />
-        <CollectionBreakdown />
         <CollectionUsageCard />
+        <CollectionBreakdown />
         <DataCard title="Use next" color="pink">
           <span>Color</span>
           <span>Color</span>
