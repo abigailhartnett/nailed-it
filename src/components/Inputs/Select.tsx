@@ -4,7 +4,7 @@ const Select = () => {
   return (
     <div className="flex gap-2">
       <label>Filter by:</label>
-      <select>
+      <select className="px-2">
         {options.map((option) => {
           return <option>{option}</option>;
         })}

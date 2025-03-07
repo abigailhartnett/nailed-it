@@ -6,3 +6,11 @@
 body {
   /* @apply font-roboto; */
 }
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+a {
+  @apply hover:text-blue hover:underline;
+}

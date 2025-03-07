@@ -8,6 +8,7 @@ import PieChart from '../components/Charts/PieChart';
 import CurrentManiCard from '../components/DataCards/CurrentManiCard';
 import CollectionBreakdown from '../components/DataCards/CollectionBreakdown';
 import Grid from '../components/Layout/Grid';
+import CollectionUsageCard from '../components/DataCards/CollectionUsageCard';
 
 const Dashboard = () => {
   return (
@@ -16,11 +17,7 @@ const Dashboard = () => {
       <Grid minWidth={280}>
         <CurrentManiCard />
         <CollectionBreakdown />
-        <DataCard title="Collection usage" color="purple">
-          <span>% Collection used</span>
-          <span>vs</span>
-          <span>% Collection owned</span>
-        </DataCard>
+        <CollectionUsageCard />
         <DataCard title="Use next" color="pink">
           <span>Color</span>
           <span>Color</span>

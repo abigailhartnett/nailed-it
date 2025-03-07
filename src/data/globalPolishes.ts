@@ -13,6 +13,7 @@ export const globalPolishes = [
     wishlist: false,
     swatched: false,
     activeMani: true,
+    used: true,
   },
   {
     polish: 'Garden Party Taco',
@@ -28,6 +29,7 @@ export const globalPolishes = [
     wishlist: false,
     swatched: false,
     activeMani: true,
+    used: true,
   },
   {
     polish: 'Imperial Stormtrooper',
@@ -43,6 +45,7 @@ export const globalPolishes = [
     wishlist: false,
     swatched: false,
     activeMani: false,
+    used: false,
   },
   {
     polish: 'La Petite Mort',
@@ -58,6 +61,7 @@ export const globalPolishes = [
     wishlist: false,
     swatched: true,
     activeMani: false,
+    used: true,
   },
   {
     polish: 'Ride Into the Sunset',
@@ -73,6 +77,7 @@ export const globalPolishes = [
     wishlist: false,
     swatched: true,
     activeMani: false,
+    used: false,
   },
   {
     polish: 'Candy Dipped',
@@ -88,5 +93,6 @@ export const globalPolishes = [
     wishlist: false,
     swatched: true,
     activeMani: false,
+    used: true,
   },
 ];

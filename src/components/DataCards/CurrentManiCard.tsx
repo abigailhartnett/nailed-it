@@ -1,7 +1,10 @@
 import DataCard from './DataCard';
 import SingleBarChart from '../Charts/SingleBarChart';
 import Button from '../Buttons/Button';
-import { FavoriteBorderRounded } from '@mui/icons-material';
+import {
+  FavoriteBorderRounded,
+  ChatBubbleOutlineOutlined,
+} from '@mui/icons-material';
 import Grid from '../Layout/Grid';
 import MiniManiCard from '../ContentCards/MiniManiCard';
 import { globalPolishes } from '../../data/globalPolishes';
@@ -28,7 +31,7 @@ const CurrentManiCard = () => {
             />
             <div className="flex gap-2">
               <Button icon={FavoriteBorderRounded}>Likes</Button>
-              <Button icon={FavoriteBorderRounded}>Comments</Button>
+              <Button icon={ChatBubbleOutlineOutlined}>Comments</Button>
             </div>
           </div>
         </div>

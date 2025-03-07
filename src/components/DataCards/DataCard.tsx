@@ -18,7 +18,7 @@ const DataCard = ({ title, subtitle, children, color, button }) => {
       ></div>
       <div className="h-full flex flex-col justify-between p-4">
         <div>
-          <h2 className="text-lg font-bold">{title}</h2>
+          <h2>{title}</h2>
           <span className="text-darkGray text-sm">{subtitle}</span>
         </div>
         <div className="h-full my-4">{children}</div>
