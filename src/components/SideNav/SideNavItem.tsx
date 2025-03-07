@@ -1,4 +1,4 @@
-const SideNavItem = ({ icon: Icon, text, href, collapsed }) => {
+const SideNavItem = ({ icon: Icon, text, href, isOpen }) => {
   // const collapsedStyles = '';
   // const expandedStyles = '';
 
@@ -7,11 +7,11 @@ const SideNavItem = ({ icon: Icon, text, href, collapsed }) => {
       {/* {collapsed ? '' : ''} */}
       <li
         className={`flex items-center gap-2 py-4 hover:bg-paleGreen hover:text-darkGreen rounded-md font-medium ${
-          collapsed ? 'justify-center px-4' : 'px-2'
+          isOpen ? 'px-2' : 'justify-center px-4'
         }`}
       >
         <Icon fontSize="small" />
-        <div className={`whitespace-nowrap ${collapsed ? 'hidden' : 'block'}`}>
+        <div className={`whitespace-nowrap ${isOpen ? 'block' : 'hidden'}`}>
           {text}
         </div>
       </li>

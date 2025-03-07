@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   HomeOutlined,
   FavoriteBorderRounded,
@@ -11,20 +10,17 @@ import {
 } from '@mui/icons-material';
 import SideNavItem from './SideNavItem';
 import IconButton from '../Buttons/IconButton';
+import { useSidebar } from '../../contexts/SidebarContext';
 // Add icon change color/fill on hover
 
 const SideNav = () => {
-  // todo: Change collapsed to isOpen like a normal person would have coded
-  const [collapsed, setCollapsed] = useState(false);
-  const handleCollapse = () => {
-    setCollapsed(!collapsed);
-    console.log(collapsed);
-  };
+  // todo: Change isOpen to isOpen like a normal person would have coded
+  const { isOpen, setIsOpen } = useSidebar();
 
   return (
     <div
       className={`bg-white fixed left-0 top-0 h-full z-10 shadow-md shadow-mediumGray transition-all duration-300 ease-in-out ${
-        collapsed ? 'w-16 py-4 px-1' : 'w-60 p-4'
+        isOpen ? 'w-60 p-4' : 'w-16 py-4 px-1'
       }`}
     >
       <div className="flex justify-between items-center">
@@ -32,10 +28,10 @@ const SideNav = () => {
           <img
             src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png"
             alt="NailedIt logo"
-            className={`h-12 w-auto ${collapsed && 'hidden'}`}
+            className={`h-12 w-auto ${isOpen ? 'block' : 'hidden'}`}
           />
         </a>
-        <IconButton onClick={() => handleCollapse()} hoverBgColor="paleGreen">
+        <IconButton onClick={() => setIsOpen(!isOpen)} hoverBgColor="paleGreen">
           <ViewSidebarOutlined
             fontSize="small"
             className="text-darkGray scale-x-[-1] hover:cursor-pointer"
@@ -48,37 +44,37 @@ const SideNav = () => {
           icon={HomeOutlined}
           text="Dashboard"
           href="/"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
         <SideNavItem
           icon={FavoriteBorderRounded}
           text="My Collection"
           href="/my-collection"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
         <SideNavItem
           icon={CalendarTodayRounded}
           text="Calendar"
           href="/calendar"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
         <SideNavItem
           icon={AccessTimeRounded}
           text="Usage analytics"
           href="/analytics"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
         <SideNavItem
           icon={LocalMallOutlined}
           text="Shop"
           href="/shop"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
         <SideNavItem
           icon={SettingsOutlined}
           text="Settings"
           href="/settings"
-          collapsed={collapsed}
+          isOpen={isOpen}
         />
       </ul>
     </div>
