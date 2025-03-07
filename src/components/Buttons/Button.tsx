@@ -5,10 +5,14 @@ const Button = ({ children, fullWidth, icon: Icon }) => {
         fullWidth ? 'w-full' : 'w-fit'
       }`}
     >
-      <div className="flex gap-2 items-center">
-        {Icon && <Icon fontSize="small" />}
-        {children}
-      </div>
+      {fullWidth ? (
+        <>{children}</>
+      ) : (
+        <div className="flex gap-2 items-center">
+          {Icon && <Icon fontSize="small" />}
+          {children}
+        </div>
+      )}
     </button>
   );
 };

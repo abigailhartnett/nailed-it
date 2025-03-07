@@ -1,10 +1,13 @@
 const DataCard = ({ title, subtitle, children, color, button }) => {
   // todo: Move these gradients to general variables to be used around the app
+  // Repeated code
   const colors = {
     green: 'bg-gradient-to-br from-mediumGreen to-mediumBlue',
     purple: 'bg-gradient-to-br from-lightPurple to-mediumPurple',
     pink: 'bg-gradient-to-br from-mediumPink to-darkPink',
     pinkPurple: 'bg-gradient-to-br from-pink to-purple',
+    orange: 'bg-gradient-to-br from-mediumOrange to-darkOrange',
+    greenBlue: 'bg-gradient-to-br from-green to-mediumBlue',
   };
 
   const backgroundColor = color ? colors[color] : colors.green;

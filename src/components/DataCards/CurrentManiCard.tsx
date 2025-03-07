@@ -28,6 +28,8 @@ const CurrentManiCard = () => {
               label="Estimated days left"
               start="Day 2"
               end="Day 7"
+              backgroundColor={'paleGreen'}
+              color="greenBlue"
             />
             <div className="flex gap-2">
               <Button icon={FavoriteBorderRounded}>Likes</Button>

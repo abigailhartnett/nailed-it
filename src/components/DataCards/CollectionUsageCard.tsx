@@ -57,6 +57,7 @@ const CollectionUsageBreakdown = () => {
         <SingleBarChart
           start={<a href="/">{usedPolishes} used</a>}
           end={<a href="/">{totalPolishes} total</a>}
+          color="orange"
         />
       </div>
     </DataCard>

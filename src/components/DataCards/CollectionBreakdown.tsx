@@ -4,7 +4,7 @@ import PieChart from '../Charts/PieChart';
 
 const CollectionBreakdown = () => {
   return (
-    <DataCard title="Collection Breakdown" color="purple">
+    <DataCard title="Collection Breakdown" color="orange">
       <div className="flex flex-col justify-between">
         <div className="flex justify-end text-sm">
           <Select />

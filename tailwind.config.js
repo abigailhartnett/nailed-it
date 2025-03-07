@@ -39,8 +39,14 @@ module.exports = {
         lightPurple: '#CB82FF',
         mediumPurple: '#7E8CFF',
 
+        palePink: '#FFF6FB',
         mediumPink: '#FF69BD',
         darkPink: '#FF6884',
+
+        mediumOrange: '#FFBA00',
+        darkOrange: '#FF8D00',
+
+        mediumBlue: '#40CFFF',
       },
     },
   },
