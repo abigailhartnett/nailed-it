@@ -53,7 +53,7 @@ const SideNav = () => {
         <SideNavItem
           icon={FavoriteBorderRounded}
           text="My Collection"
-          href="/polish/one-coat-black"
+          href="/polish/garden-party-taco"
           isOpen={isOpen}
         />
         <SideNavItem
