@@ -12,12 +12,12 @@ import { globalPolishes } from '../../data/globalPolishes';
 const CurrentManiCard = () => {
   const activePolishes = globalPolishes.map((polish) => {
     if (polish.activeMani) {
-      return <MiniManiCard polish={polish.polish} image={polish.image} />;
+      return <MiniManiCard polish={polish.name} image={polish.image} />;
     }
   });
 
   return (
-    <DataCard title="Current mani" subtitle="Applied 2 days ago">
+    <DataCard title="Current Mani" subtitle="Applied 2 days ago">
       <div className="h-full flex flex-col gap-2 justify-between">
         <Grid gap={2} minWidth={100}>
           {activePolishes}

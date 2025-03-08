@@ -24,17 +24,22 @@ module.exports = {
         red: '#9AA3B4',
         blue: '#44A7FF',
         pink: '#FF66B8',
+        brown: '#904A00',
 
         lightGray: '#F9FAFC',
         mediumGray: '#E3E4E6',
         darkGray: '#73727A',
 
         paleGreen: '#EFFDFC',
+        lightGreen: '#D4FDE5',
         mediumGreen: '#00D8C3',
-        darkGreen: '#007771',
+        darkGreen: '#006728',
         brightGreen: '#21BA6A',
 
-        mediumBlue: '#00D9EF',
+        paleBlue: '#F9FAFC',
+        lightBlue: '#D8EAFF',
+        mediumBlue: '#40CFFF',
+        darkBlue: '#0A42B5',
 
         lightPurple: '#CB82FF',
         mediumPurple: '#7E8CFF',
@@ -44,9 +49,11 @@ module.exports = {
         darkPink: '#FF6884',
 
         mediumOrange: '#FFBA00',
+        lightOrange: '#FFECD3',
         darkOrange: '#FF8D00',
+        darkestOrange: '#A12E05',
 
-        mediumBlue: '#40CFFF',
+        lightYellow: '#FFF9BC',
       },
     },
   },

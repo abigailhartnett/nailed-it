@@ -31,7 +31,11 @@ const SideNav = () => {
             className={`h-12 w-auto ${isOpen ? 'block' : 'hidden'}`}
           />
         </a>
-        <IconButton onClick={() => setIsOpen(!isOpen)} hoverBgColor="paleGreen">
+        <IconButton
+          onClick={() => setIsOpen(!isOpen)}
+          hoverBgColor="paleGreen"
+          hoverColor="green"
+        >
           <ViewSidebarOutlined
             fontSize="small"
             className="text-darkGray scale-x-[-1] hover:cursor-pointer"
@@ -49,18 +53,18 @@ const SideNav = () => {
         <SideNavItem
           icon={FavoriteBorderRounded}
           text="My Collection"
-          href="/my-collection"
+          href="/polish/one-coat-black"
           isOpen={isOpen}
         />
         <SideNavItem
           icon={CalendarTodayRounded}
-          text="Calendar"
-          href="/calendar"
+          text="Journal"
+          href="/journal"
           isOpen={isOpen}
         />
         <SideNavItem
           icon={AccessTimeRounded}
-          text="Usage analytics"
+          text="Usage Analytics"
           href="/analytics"
           isOpen={isOpen}
         />

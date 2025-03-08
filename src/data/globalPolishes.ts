@@ -1,6 +1,6 @@
 export const globalPolishes = [
   {
-    polish: 'One-Coat Black',
+    name: 'One-Coat Black',
     colorFamily: 'black',
     finish: 'Creme',
     brand: 'Holo Taco',
@@ -16,7 +16,7 @@ export const globalPolishes = [
     used: true,
   },
   {
-    polish: 'Garden Party Taco',
+    name: 'Garden Party Taco',
     colorFamily: 'neutral',
     finish: 'topper',
     brand: 'Holo Taco',
@@ -32,7 +32,7 @@ export const globalPolishes = [
     used: true,
   },
   {
-    polish: 'Imperial Stormtrooper',
+    name: 'Imperial Stormtrooper',
     colorFamily: 'gray',
     finish: 'magnetic',
     brand: 'Mooncat',
@@ -48,7 +48,7 @@ export const globalPolishes = [
     used: false,
   },
   {
-    polish: 'La Petite Mort',
+    name: 'La Petite Mort',
     colorFamily: 'purple',
     finish: 'magnetic',
     brand: 'Mooncat',
@@ -64,7 +64,7 @@ export const globalPolishes = [
     used: true,
   },
   {
-    polish: 'Ride Into the Sunset',
+    name: 'Ride Into the Sunset',
     colorFamily: 'orange',
     finish: 'creme',
     brand: 'Olive & June',
@@ -80,7 +80,7 @@ export const globalPolishes = [
     used: false,
   },
   {
-    polish: 'Candy Dipped',
+    name: 'Candy Dipped',
     colorFamily: 'red',
     finish: 'jelly',
     brand: 'Olive & June',
